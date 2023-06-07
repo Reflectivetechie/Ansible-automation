@@ -4,22 +4,22 @@
    become : yes
    tasks:
     - name: update packages and install apache
-      ansible.builtin.apt:
+       ansible.builtin.apt:
          name: apache2
          update_cache: yes
          state: present
     - name: install php packages
-      ansible.builtin.apt:
+       ansible.builtin.apt:
        name:
         - php
         - libapche2-mod-php
         - php-mysql
        state: present
     - name: copy the info.php packages
-      ansible.builtin.copy:
-      src: info.php
-      dest: /var/www/html/info.php
+       ansible.builtin.copy:
+       src: info.php
+       dest: /var/www/html/info.php
     - name: restart apache2
-      ansible.builtin.systemd:
+       ansible.builtin.systemd:
        name: apache2
        state: restarted
