@@ -1,7 +1,8 @@
- -name: installation of apache software
-  hosts: all
-  become: yes
-  tasks:
+---
+ - name: installation of apache software
+   hosts: all
+   become: yes
+   tasks:
     - name: install apache
       ansible.builtin.apt:
        name: apache2
