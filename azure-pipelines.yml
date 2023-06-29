@@ -1,0 +1,6 @@
+trigger:
+- main
+pool:
+  name: default
+steps:
+  - bash: pwd
