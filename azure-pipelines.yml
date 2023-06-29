@@ -3,4 +3,4 @@ trigger:
 pool:
   name: default
 steps:
-  - bash: pwd
+  - bash: mkdir mark && cd mark
