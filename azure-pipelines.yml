@@ -1,6 +1,6 @@
 trigger:
 - main
 pool:
-  name: default
+  name: Azure Pipelines
 steps:
   - bash: mkdir mark && cd mark
