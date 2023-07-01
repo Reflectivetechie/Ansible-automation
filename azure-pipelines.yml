@@ -3,4 +3,4 @@ trigger:
 pool:
   name: Azure Pipelines
 steps:
-  - bash: mkdir mark && cd mark
+  - bash: $echo hello world
